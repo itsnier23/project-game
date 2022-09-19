@@ -1,0 +1,194 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+section {
+  height: 100vh;
+  background-color: #3F4E4F;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.score {
+  color: rgb(224, 224, 224);
+  height: 20vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color:black;
+}
+
+p {
+  background-color:#3F4E4F;
+  border-radius: 20rem;
+}
+
+
+
+.score h2 {
+  font-size:50px;
+  font-family: 'Courier New', Courier, monospace;
+}
+.score p {
+  text-align: center;
+  padding: 10px;
+  font-size: 25px;
+}
+
+.intro {
+  color: white;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  transition: opacity 0.5s ease;
+}
+
+.intro h1 {
+  font-size: 100px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+
+.intro button, .match button {
+  width: 300px;
+  height: 100px;
+  background: none;
+  border: none;
+  color: rgb(224, 224, 224);
+  font-size: 30px;
+  background: #9FC088;
+  border-radius: 30px;
+  cursor: pointer;
+  
+}
+
+
+
+.match button:hover {
+  color: white;
+  background-color: black;
+  border: 0.60rem solid black;
+}
+
+.intro button:hover {
+  color:white;
+  background-color: black;
+  border: 0.60rem solid black;
+}
+
+
+
+
+
+
+
+.match {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: opacity 0.5s ease 0.5s;
+}
+.winner {
+  color: rgb(224, 224, 224);
+  text-align: center;
+  font-size: 100px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.hands,
+.options {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 300px;
+}
+
+
+
+.player-hand {
+  transform: rotateY(180deg);
+}
+
+div.fadeOut {
+  opacity: 0;
+  pointer-events: none;
+}
+
+div.fadeIn {
+  opacity: 1;
+  pointer-events: all;
+}
+
+
+.computer-hand {
+  padding-left: 300px;
+}
+
+
+
+
+@keyframes shakePlayer {
+  0% {
+    transform: rotateY(180deg) translateY(0px);
+  }
+  15% {
+    transform: rotateY(180deg) translateY(-50px);
+  }
+  25% {
+    transform: rotateY(180deg) translateY(0px);
+  }
+  35% {
+    transform: rotateY(180deg) translateY(-50px);
+  }
+  50% {
+    transform: rotateY(180deg) translateY(0px);
+  }
+  65% {
+    transform: rotateY(180deg) translateY(-50px);
+  }
+  75% {
+    transform: rotateY(180deg) translateY(0px);
+  }
+  85% {
+    transform: rotateY(180deg) translateY(-50px);
+  }
+  100% {
+    transform: rotateY(180deg) translateY(0px);
+  }
+}
+
+@keyframes shakeComputer {
+  0% {
+    transform: translateY(0px);
+  }
+  15% {
+    transform: translateY(-50px);
+  }
+  25% {
+    transform: translateY(0px);
+  }
+  35% {
+    transform: translateY(-50px);
+  }
+  50% {
+    transform: translateY(0px);
+  }
+  65% {
+    transform: translateY(-50px);
+  }
+  75% {
+    transform: translateY(0px);
+  }
+  85% {
+    transform: translateY(-50px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
