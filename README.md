@@ -31,5 +31,6 @@ You Vs computer
 ![logic](https://user-images.githubusercontent.com/101546162/190936628-dfb36837-1556-4c8e-a7d9-69aa5f4bbb24.png)
 
 
-WHY I CHOSE THIS GAME? 
-I feel like this game is pretty easy to make for a beginner just like me and the logic is so easy to understand.
+
+FUTURE UPDATE:
+ADDING RESET BUTTON THAT WILL RESTART THE WHOLE GAME
